@@ -1,0 +1,93 @@
+
+/*  Start Variable */
+:root{
+    --main-color : rgb(214, 214, 214);
+    --first-shadow-color:#babecc;
+    --second-shadow-color:#ffffff;
+    --third-shadow-color:#b6a9a9;
+
+}
+
+/*  End Variable */
+
+
+/* Start global Rules */
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--main-color);
+}
+
+/* End global Rules */
+ 
+
+/* Start Calculator */
+.container{
+    width: 250px;
+    height: 400px;
+    margin: 80px auto;
+    background-color:   var(--main-color);
+    box-shadow: 5px 5px 10px var(--third-shadow-color) ,-5px -5px 10px var(--second-shadow-color);
+}
+.container .cal-box{
+    width: 200px;
+    margin: 20px auto;
+}
+.container .cal-box form #display{
+    width: 170px;
+    border: none;
+    outline: none;
+    color: black;
+    text-align: right;
+    font-weight: 600;
+    padding: 10px;
+    font-size: 20px;
+    margin: 30px 0 20px 0;
+    background-color: transparent;
+    box-shadow: inset 2px 2px 5px var(--first-shadow-color) ,inset -5px -5px 10px var(--second-shadow-color);
+}
+
+.container .cal-box form .button{
+    margin: 15px 0 0 5px;
+    width: 42px;
+    height: 42px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color:   var(--main-color);
+    box-shadow:  5px 5px 10px #b6acac, -5px -5px 10px #fafafa;
+    display: inline-block;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.container .cal-box form .clear{
+    background-color: rgba(255, 0, 0, 0.959);
+    color: white;
+
+}
+
+.container .cal-box form .math{
+    background-color: rgba(0, 0, 255, 0.966);
+    color: white;
+}
+
+.container .cal-box form .delete{
+    display: block;
+    margin: 20px auto;
+    width: 150px;
+    background-color: green;
+    color: white;
+
+}
+
+
+/* End Calculator */
+
+
